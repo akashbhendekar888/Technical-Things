@@ -7,7 +7,7 @@ public class Student {
 	void display() {
 		System.out.println("Students Details");
 	}
-	public int getRollNo() {
+	public int getRollNo() {                 //geter method return the value which is define in set method
 		return rollNo;
 		
 	}
@@ -22,7 +22,7 @@ public class Student {
 		rollNo=n;
 		
 	}
-	public void setName(String s) {
+	public void setName(String s) {      //seter method is set The Value and declare the parameters
 		name=s;
 		
 	}	
@@ -37,13 +37,13 @@ public class Student {
 		// TODO Auto-generated method stub
 		Student details=new Student();
 		 
-		details.setRollNo(20);
+		details.setRollNo(20);                       //call the method assign the value 
 		details.setName("Ragnar lorthbrok");
 		details.setBranch("Computer Science");
 		
 		
-		System.out.println("Student Roll Number ::"+details.getRollNo());
-		System.out.println("Student Name ::"+details.getName());
+		System.out.println("Student Roll Number ::"+details.getRollNo());  //print the data invoking the get method 
+		System.out.println("Student Name ::"+details.getName());      
 		System.out.println("Student Branch ::"+details.getBranch());
 		
 		
